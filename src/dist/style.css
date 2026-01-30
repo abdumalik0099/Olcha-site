@@ -1,5 +1,140 @@
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.top_red {
+  display: flex;
+  background-color: #da002b;
+}
+.top_red .top_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_red .top_navbar .left_top_nav {
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+}
+.top_red .top_navbar .left_top_nav .rassrochka {
+  color: #da002b;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+.top_red .top_navbar .left_top_nav .rassrochka:hover {
+  background-color: #da002b;
+  color: #fff;
+}
+.top_red .top_navbar .left_top_nav .top_skidki {
+  color: #fff;
+  background-color: #da002b;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+.top_red .top_navbar .left_top_nav .top_skidki:hover {
+  background-color: #fff;
+  color: #da002b;
+}
+.top_red .top_navbar .left_top_nav .rozigrish {
+  color: #da002b;
+  background-color: #fff;
+  padding: 5px 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: 0.3s;
+}
+.top_red .top_navbar .left_top_nav .rozigrish:hover {
+  background-color: #da002b;
+  color: #fff;
+}
+.top_red .top_navbar .left_top_nav .karta_sayta {
+  color: #fff;
+  font-size: 20px;
+  padding-left: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  background-color: #da002b;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.top_red .top_navbar .left_top_nav .karta_sayta:hover {
+  color: #a09f9f;
+}
+.top_red .top_navbar .right_top_nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.top_red .top_navbar .right_top_nav .phone_num {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.top_red .top_navbar .right_top_nav .sell_on_olcha {
+  color: #fff;
+  background-color: #da002b;
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.top_red .top_navbar .right_top_nav .sell_on_olcha:hover {
+  background-color: #fff;
+  color: #da002b;
+}
+.top_red .top_navbar .right_top_nav .lang_switcher {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.top_red .top_navbar .right_top_nav .lang_switcher .lang {
+  text-decoration: none;
+  color: #aeaeae;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.top_red .top_navbar .right_top_nav .lang_switcher .lang:hover {
+  color: #fff;
+}
+.top_red .top_navbar .right_top_nav .lang_switcher .lang.active {
+  color: #fff;
+}
+.top_red .top_navbar .right_top_nav .lang_switcher .bord {
+  width: 1px;
+  background-color: #a09f9f;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
