@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +6,7 @@
 
 .container {
   width: 100%;
-  max-width: 1300px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -135,6 +134,206 @@
   width: 1px;
   background-color: #a09f9f;
   height: 50px;
+}
+
+/* Variables */
+.hidden {
+  display: none;
+}
+
+/* NAV */
+.naw {
+  background: #fff;
+  padding: 20px 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.naw .logo {
+  height: 28px;
+}
+.naw .logo_btn {
+  border: solid black;
+  gap: 12px;
+  display: flex;
+  background-color: #fff;
+  padding: 15px 50px;
+  border-radius: 16px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+.naw .logo_btn:hover {
+  border: solid #da002b;
+  color: #da002b;
+}
+.naw .logo_btn i {
+  font-size: 18px;
+}
+.naw .input_box {
+  display: flex;
+  flex: 10;
+  max-width: 600px;
+}
+.naw .input_box input {
+  flex: 1;
+  padding: 14px 10px;
+  border: none;
+  background-color: #F2F2F2;
+  width: 100%;
+  border-radius: 10px;
+  outline: none;
+}
+.naw .input_box button {
+  background: #da002b;
+  border: none;
+  padding: 14px 18px;
+  color: #fff;
+  margin-left: -15px;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+.naw .input_box button:hover {
+  border: 2px solid #da002b;
+}
+.naw .icon {
+  display: flex;
+  gap: 29px;
+}
+.naw .icon .icon-box {
+  text-align: center;
+  cursor: pointer;
+}
+.naw .icon .icon-box i {
+  font-size: 20px;
+}
+.naw .icon .icon-box:hover {
+  color: #da002b;
+}
+
+/* Catalog Wrapper */
+.catalog_wrapper {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 90px);
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.catalog_wrapper.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.catalog_wrapper .catalog_box {
+  background: #fff;
+  max-width: 100%;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+.catalog_wrapper .catalog_box .catalog_left {
+  width: 260px;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.catalog_wrapper .catalog_box .catalog_left a {
+  padding: 10px 14px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 8px;
+}
+.catalog_wrapper .catalog_box .catalog_left a:hover, .catalog_wrapper .catalog_box .catalog_left a.active {
+  background: white;
+  color: #da002b;
+}
+.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn {
+  border: 1px solid #da002b;
+  color: #da002b;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady img {
+  width: 45px;
+}
+.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady h4 {
+  font-size: 19px;
+  margin-left: 15px;
+}
+.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady i {
+  font-size: 26px;
+  margin-left: 19px;
+}
+.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: black;
+}
+.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby.hidden {
+  display: none;
+}
+.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby img {
+  width: 45px;
+}
+.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby img.b2b {
+  height: 40px;
+  width: 40px;
+}
+.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby h4 {
+  font-size: 15px;
+}
+.catalog_wrapper .catalog_box .catalog_right {
+  flex: 1;
+}
+.catalog_wrapper .catalog_box .catalog_right h3 {
+  margin-bottom: 15px;
+}
+.catalog_wrapper .catalog_box .catalog_right .brands {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.catalog_wrapper .catalog_box .catalog_right .brands a {
+  text-decoration: none;
+  color: #555;
+}
+.catalog_wrapper .catalog_box .catalog_right .brands a:hover {
+  color: #da002b;
+}
+.catalog_wrapper .catalog_box .close_btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .input_box,
+  .icon {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

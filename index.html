@@ -5,37 +5,132 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./src/dist/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <header>
       <nav class="nav">
         <div class="top_red">
-        <div class="top_navbar container">
-          <div class="left_top_nav">
-            <button class="rassrochka">0% Рассрочка</button>
-            <button class="top_skidki">Скидки</button>
-            <button class="rozigrish">Розыгрыши</button>
-            <button class="karta_sayta">Карта сайта</button>
-          </div>
-          <div class="right_top_nav">
-            <a href="tel:+998712022021" class="phone_num">+998 (71) 202 202 1</a>
-            <button class="sell_on_olcha">Продавайте на olcha</button>
-            <div class="lang_switcher">
+          <div class="top_navbar container">
+            <div class="left_top_nav">
+              <button class="rassrochka">0% Рассрочка</button>
+              <button class="top_skidki">Скидки</button>
+              <button class="rozigrish">Розыгрыши</button>
+              <button class="karta_sayta">Карта сайта</button>
+            </div>
+            <div class="right_top_nav">
+              <a href="tel:+998712022021" class="phone_num"
+                >+998 (71) 202 202 1</a
+              >
+              <button class="sell_on_olcha">Продавайте на olcha</button>
+              <div class="lang_switcher">
                 <div class="bord"></div>
-              <a href="#" class="lang" id="href1">Ўзб</a>
-              <a href="#" class="lang" id="href2">O'z</a>
-              <a href="#" class="lang" id="href3">Рус</a>
+                <a href="#" class="lang" id="href1">Ўзб</a>
+                <a href="#" class="lang" id="href2">O'z</a>
+                <a href="#" class="lang" id="href3">Рус</a>
                 <div class="bord"></div>
+              </div>
             </div>
           </div>
-            </div>
         </div>
-        <div class="navbar container"></div>
+        <div class="navbar container">
+          <div class="naw">
+            <img
+              class="logo"
+              src="./src/assets/svg/plus.lRzD4Jf7.png"
+              alt="logo"
+            />
+
+            <button class="logo_btn" id="openCatalog">
+              <i class="fa-solid fa-bars"></i> Katalog
+            </button>
+
+            <div class="input_box">
+              <input type="search" placeholder="Katalog bo‘yicha qidirish" />
+              <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+
+            <div class="icon">
+              <div class="icon-box">
+                <i class="fa-solid fa-chart-column"></i>
+                <div>Taqqoslash</div>
+              </div>
+              <div class="icon-box">
+                <i class="fa-regular fa-heart"></i>
+                <div>Sevimli</div>
+              </div>
+              <div class="icon-box">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <div>Savatcha</div>
+              </div>
+              <div class="icon-box">
+                <i class="fa-regular fa-user"></i>
+                <div>Kirish</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog_wrapper hidden container" id="catalog">
+            <div class="catalog_box">
+              <div class="catalog_left">
+                <div class="catolog_baby_btn">
+                  <div class="baby_dady">
+                    <img
+                      src="./src/assets/svg/eco-products-logo.svg"
+                      alt="пппппп"
+                    />
+                    <h4>Olcha Market</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="baby_baby hidden">
+                    <img src="./src/assets/svg/foiz.svg" alt="2" />
+                    <h4>Olcha Nasiya</h4>
+                  </div>
+                  <div class="baby_baby hidden">
+                    <img src="./src/assets/svg/antena.svg" alt="1" />
+                    <h4>Olcha Invist</h4>
+                  </div>
+                  <div class="baby_baby hidden">
+                    <img src="./src/assets/svg/karta.svg" alt="4" />
+                    <h4>Olcha ERP</h4>
+                  </div>
+                  <div class="baby_baby hidden">
+                    <img class="b2b" src="./src/assets/svg/b2.svg" alt="1" />
+                    <h4>Olcha B2B</h4>
+                  </div>
+                </div>
+                <a href="#">Televizorlar,foto vidio va audio</a>
+                <a href="#">Smartfonlar</a>
+                <a href="#">Noutbuklar</a>
+                <a href="#">Maishiy texnika</a>
+                <a href="#">Aksessuarlar</a>
+              </div>
+
+              <div class="catalog_right">
+                <h3 class="tur">Televizorlar</h3>
+                <div class="brands">
+                  <a href="#">Samsung</a>
+                  <a href="#">LG</a>
+                  <a href="#">Sony</a>
+                  <a href="#">Artel</a>
+                  <a href="#">Shivaki</a>
+                  <a href="#">TCL</a>
+                  <a href="#">Hisense</a>
+                  <a href="#">Xiaomi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
     <main></main>
     <footer></footer>
     <script src="./src/js/script.js"></script>
+    <script src="./src/js/nav.js"></script>
   </body>
 </html>
 
