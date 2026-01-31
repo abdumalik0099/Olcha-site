@@ -84,7 +84,7 @@ $shadow-light: rgba(0, 0, 0, 0.1);
     .icon-box {
       text-align: center;
       cursor: pointer;
-
+      transition: all 0.25s ease;
       i {
         
         font-size: 20px;
