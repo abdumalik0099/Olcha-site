@@ -75,3 +75,77 @@ categoryLinks.forEach(link => {
     console.log(turlarObj);
   });
 });
+
+
+
+
+
+
+
+
+const slider = document.querySelector('.cursor-slide');
+let isDown = false;
+let startX;
+let scrollLeft;
+
+// блокируем drag у всех img
+document.querySelectorAll('.cursor-slide img').forEach(img => img.draggable = false);
+
+slider.addEventListener('mousedown', (e) => {
+  isDown = true;
+  slider.style.cursor = 'grabbing';
+  startX = e.pageX;
+  scrollLeft = slider.scrollLeft;
+});
+
+slider.addEventListener('mouseleave', () => {
+  if (!isDown) return;
+  isDown = false;
+  slider.style.cursor = 'grab';
+  elasticBack();
+});
+
+slider.addEventListener('mouseup', () => {
+  if (!isDown) return;
+  isDown = false;
+  slider.style.cursor = 'grab';
+  elasticBack();
+});
+
+slider.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const walk = (startX - e.pageX) * 1.5; // скорость
+  slider.scrollLeft = scrollLeft + walk;
+});
+
+// Функция elastic на концах
+function elasticBack() {
+  const maxScroll = slider.scrollWidth - slider.clientWidth;
+
+  if (slider.scrollLeft < 0) {
+    animateScroll(slider.scrollLeft, 0);
+  } else if (slider.scrollLeft > maxScroll) {
+    animateScroll(slider.scrollLeft, maxScroll);
+  }
+}
+
+// Плавная анимация возврата
+function animateScroll(from, to) {
+  const duration = 300;
+  const startTime = performance.now();
+
+  function step(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    slider.scrollLeft = from + (to - from) * easeOut(progress);
+    if (progress < 1) requestAnimationFrame(step);
+  }
+
+  requestAnimationFrame(step);
+}
+
+function easeOut(t) {
+  return 1 - Math.pow(1 - t, 3);
+}
+

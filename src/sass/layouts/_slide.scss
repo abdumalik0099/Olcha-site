@@ -13,7 +13,6 @@
   body {
     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
-    color: #fff;
     margin: 0;
     padding: 0;
   }
@@ -141,12 +140,15 @@
           margin-top: 22px;
           background: #ffd400;
           border: none;
-          padding: 16px;
-          width: 100%;
+          padding: 10px 15px;
           border-radius: 14px;
           font-size: 18px;
           font-weight: 700;
           cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            background: #e6b800;
+          }
         }
       }
     }
