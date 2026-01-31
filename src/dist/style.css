@@ -198,6 +198,7 @@
   border: 2px solid #da002b;
 }
 .naw .icon {
+  color: black;
   display: flex;
   gap: 29px;
 }
@@ -350,8 +351,8 @@ body {
 
 .slide .slire-left .swiper {
   margin: auto 0;
-  width: 77%;
-  height: 400px;
+  width: 75%;
+  height: 800px;
   border-radius: 20px;
 }
 .slide .slire-left .swiper-slide {
@@ -371,6 +372,7 @@ body {
 }
 
 .slire-right .katta {
+  margin: 30px 0 10px 0;
   width: 390px;
   height: 520px;
   background: #fff;
@@ -384,8 +386,12 @@ body {
   align-items: center;
 }
 .slire-right .katta .card-top h3 {
+  color: black;
   font-size: 22px;
   font-weight: 700;
+}
+.slire-right .katta .card-top .timer {
+  color: black;
 }
 .slire-right .katta .card-top .timer span {
   background: #fff;
@@ -420,6 +426,7 @@ body {
   font-weight: 700;
 }
 .slire-right .katta .price-box .title {
+  color: #9c9c9c;
   font-size: 20px;
   line-height: 1.3;
   margin-bottom: 14px;
@@ -431,15 +438,15 @@ body {
 }
 .slire-right .katta .price-box .prices .new {
   color: #d70018;
-  font-size: 28px;
+  font-size: 23px;
   font-weight: 800;
 }
 .slire-right .katta .price-box .prices .old {
   color: #9c9c9c;
-  font-size: 18px;
+  font-size: 19px;
   text-decoration: line-through;
 }
-.slire-right .katta .price-box .prices button {
+.slire-right .katta .price-box button {
   margin-top: 22px;
   background: #ffd400;
   border: none;
@@ -451,5 +458,33 @@ body {
   cursor: pointer;
 }
 
-/*# sourceMappingURL=style.css.map */
+.slide {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+.slide .slire-left {
+  flex: 1;
+  min-width: 0;
+}
+.slide .slire-left .swiper {
+  width: 100%;
+  height: 523px;
+  border-radius: 20px;
+}
+.slide .slire-left .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slide .slire-right {
+  flex-shrink: 0;
+}
+.slide .slire-right .katta {
+  margin: 0;
+  width: 390px;
+}
 
+/*# sourceMappingURL=style.css.map */

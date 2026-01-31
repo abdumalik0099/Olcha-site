@@ -41,6 +41,7 @@ $shadow-light: rgba(0, 0, 0, 0.1);
     }
 
     i {
+      
       font-size: 18px;
     }
   }
@@ -76,6 +77,7 @@ $shadow-light: rgba(0, 0, 0, 0.1);
   }
 
   .icon {
+    color: black;
     display: flex;
     gap: 29px;
 
@@ -84,6 +86,7 @@ $shadow-light: rgba(0, 0, 0, 0.1);
       cursor: pointer;
 
       i {
+        
         font-size: 20px;
       }
 
