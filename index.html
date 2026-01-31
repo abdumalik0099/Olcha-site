@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   </head>
   <body>
     <header>
@@ -73,8 +74,8 @@
             </div>
           </div>
 
-          <div class="catalog_wrapper hidden container" id="catalog">
-            <div class="catalog_box">
+          <div class="catalog_wrapper hidden" id="catalog">
+            <div class="catalog_box container">
               <div class="catalog_left">
                 <div class="catolog_baby_btn">
                   <div class="baby_dady">
@@ -127,7 +128,59 @@
         </div>
       </nav>
     </header>
-    <main></main>
+    <main class="container">
+        <div class="slide container">
+          <div class="slire-left">
+            <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./src/assets/img/img1.jpg" alt="t"></div>
+      <div class="swiper-slide"><img src="./src/assets/img/img1.jpg" alt="t"></div>
+      <div class="swiper-slide"><img src="./src/assets/img/img1.jpg" alt="t"></div>
+      <div class="swiper-slide"><img src="./src/assets/img/img1.jpg" alt="t"></div>
+      <div class="swiper-slide"><img src="./src/assets/img/img1.jpg" alt="t"></div>
+      <div class="swiper-slide"><img src="./src/assets/img/img1.jpg" alt="t"></div>
+      <div class="swiper-slide"><img src="./src/assets/img/img1.jpg" alt="t"></div>
+      <div class="swiper-slide"><img src="./src/assets/img/img1.jpg" alt="t"></div>
+      <div class="swiper-slide"><img src="./src/assets/img/img1.jpg" alt="t"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+          </div>
+          <div class="slire-right">
+            <div class="katta"> <div class="card-top">
+    <h3>Товар дня</h3>
+    <div class="timer">
+      <span id="h">04 :</span>:
+      <span id="m">58 :</span>:
+      <span id="s">59</span>
+    </div>
+  </div>
+
+  <!-- 2-div: rasm -->
+  <div class="image-box">
+    <span class="sale">-5%</span>
+    <img id="productImg" src="/FU2aYv5pcFIprSJvtchUpDc2RSzhFJC4aqJifkNj0uQG1xmVCkTKgJmuZKIH.jpg" alt="">
+  </div>
+
+  <!-- 3-div: narx -->
+  <div class="price-box">
+    <p class="title">Пылесос VC 3 Plus</p>
+    <div class="prices">
+      <span class="new">2 656 251 сум</span>
+      <span class="old">2 796 053 сум</span>
+    </div>
+    <button>312 000 сум x 12 мес</button>
+  </div>
+</div></div>  
+          </div>
+        </div>
+    </main>
     <footer></footer>
     <script src="./src/js/script.js"></script>
     <script src="./src/js/nav.js"></script>
