@@ -235,3 +235,102 @@
     }
   }
 }
+
+$red: #d70018;
+$yellow: #ffd84d;
+$gray: #999;
+$transition: 0.3s ease;
+
+.products {
+  background-color: $red;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+#card_product_aksiya_1{
+   gap: 20px;
+    align-items: flex-start;
+  width: 400px;
+  display: flex;
+}
+
+#card_product_aksiya_5{
+  width: 400px;
+  display: flex;
+}
+
+.card {
+  margin: 10px 0 10px 10px ;
+  width: 290px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  transition: $transition;
+
+  &:hover {
+    transform: translateY(-5px);
+
+    img {
+      transform: scale(1.05);
+    }
+  }
+
+  img {
+    width: 90%;
+    height: 200px;
+    object-fit: contain;
+    transition: $transition;
+  }
+
+  .discount {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: $red;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 16px;
+    margin: 15px 0;
+  }
+
+  .old {
+    color: $gray;
+    text-decoration: line-through;
+    font-size: 14px;
+  }
+
+  .price {
+    color: $red;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+
+  .credit {
+    display: inline-block;
+    background: $yellow;
+    padding: 8px 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 8px;
+  }
+}
