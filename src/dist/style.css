@@ -136,6 +136,11 @@
   height: 50px;
 }
 
+@media (max-width: 768px) {
+  .top_red {
+    display: none;
+  }
+}
 /* Variables */
 .hidden {
   display: none;
@@ -144,16 +149,32 @@
 /* NAV */
 .navbar .naw {
   background: #fff;
-  padding: 20px 5px;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 30px;
 }
-.navbar .naw .logo {
+.navbar .naw .media-blok {
+  display: none;
+}
+.navbar .naw .fl {
+  width: 100%;
+  background: #fff;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .naw .fl .media {
+  display: none;
+}
+.navbar .naw .fl .med-btn {
+  display: none;
+}
+.navbar .naw .fl .logo {
   height: 28px;
 }
-.navbar .naw .logo_btn {
+.navbar .naw .fl .logo_btn {
   border: solid black;
   gap: 12px;
   display: flex;
@@ -164,11 +185,11 @@
   cursor: pointer;
   transition: all 0.25s ease;
 }
-.navbar .naw .logo_btn:hover {
+.navbar .naw .fl .logo_btn:hover {
   border: solid #da002b;
   color: #da002b;
 }
-.navbar .naw .logo_btn i {
+.navbar .naw .fl .logo_btn i {
   font-size: 18px;
 }
 .navbar .naw .input_box {
@@ -180,7 +201,7 @@
   flex: 1;
   padding: 14px 10px;
   border: none;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   width: 100%;
   border-radius: 10px;
   outline: none;
@@ -332,8 +353,101 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .input_box,
-  .icon {
+  .navbar .naw {
+    padding: 5px 7px;
+    display: block;
+    justify-content: space-between;
+  }
+  .navbar .naw .media-blok {
+    display: block;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .navbar .naw .media-blok .flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+    width: 100%;
+  }
+  .navbar .naw .media-blok .flex i {
+    font-size: 30px;
+  }
+  .navbar .naw .media-blok .flex img {
+    width: 100px;
+  }
+  .navbar .naw .media-blok .media-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .navbar .naw .media-blok .media-flex .media-icon {
+    border: 2px solid #121010;
+    border-radius: 8px;
+    padding: 4px 6px;
+  }
+  .navbar .naw .media-blok .media-flex .media-icon i {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .navbar .naw .media-blok .media-flex .media-input {
+    display: flex;
+    align-items: center;
+    background-color: #e1dede;
+    padding: 7px 10px;
+    border-radius: 10px;
+    width: 80%;
+  }
+  .navbar .naw .media-blok .media-flex .media-input input {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 8px;
+    width: 150px;
+  }
+  .navbar .naw .media-blok .media-flex .media-input i {
+    font-size: 20px;
+    color: #888;
+  }
+  .navbar .naw .fl .logo_btn {
+    display: none;
+  }
+  .navbar .naw .fl .lex {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .navbar .naw .fl .lex .media {
+    display: flex;
+  }
+  .navbar .naw .fl .lex .media .log {
+    display: block;
+    height: 35px;
+    border-radius: 6px;
+    margin-right: 10px;
+  }
+  .navbar .naw .fl .lex .med-btn {
+    display: block;
+    background-color: #da002b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+  }
+  .navbar .naw .fl .lex .med-btn:hover {
+    background-color: rgb(167, 0, 32.9403669725);
+  }
+  .navbar .naw .fl .logo {
+    display: none;
+  }
+  .navbar .naw .fl .input_box {
+    display: none;
+  }
+  .navbar .naw .fl .icon .icon-box {
     display: none;
   }
 }
@@ -488,7 +602,7 @@ body {
 }
 .slide .slire-right .katta {
   margin: 0;
-  width: 390px;
+  width: 100%;
 }
 
 .reklama {
@@ -503,6 +617,36 @@ body {
   transform: scale(1.04);
 }
 
+@media (max-width: 768px) {
+  body {
+    padding: 0 10px;
+  }
+  .slide {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .slide .slire-left,
+  .slide .slire-right {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+  .slide .slire-left .swiper,
+  .slide .slire-right .swiper {
+    height: 150px;
+  }
+  .slide .slire-right .katta {
+    width: 100%;
+  }
+  .reklama {
+    margin-top: 20px;
+  }
+  .reklama img {
+    width: 100%;
+    height: 40px;
+  }
+}
 .cursor-slide {
   display: flex;
   gap: 1rem;

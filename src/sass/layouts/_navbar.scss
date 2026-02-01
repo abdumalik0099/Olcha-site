@@ -1,4 +1,3 @@
-
 /* Variables */
 $primary-color: #da002b;
 $bg-light: #f4f4f4;
@@ -6,240 +5,352 @@ $white: #fff;
 $text-color: #333;
 $shadow-light: rgba(0, 0, 0, 0.1);
 
-
 .hidden {
   display: none;
 }
 
 /* NAV */
-.navbar{
+.navbar {
   .naw {
-  background: $white;
-  padding: 20px 5px;
-  display: flex;
+    background: $white;
+    margin-top: 10px;
+    display: flex;
     justify-content: space-between;
-  align-items: center;
-  gap: 30px;
-
-  .logo {
-    height: 28px;
-  }
-
-  .logo_btn {
-    border: solid black;
-    gap: 12px;
-    display: flex;
-    background-color: $white;
-    padding: 15px 50px;
-    border-radius: 16px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: all 0.25s ease;
-
-    &:hover {
-      border: solid $primary-color;
-      color: $primary-color;
+    align-items: center;
+    .media-blok {
+      display: none;
     }
-
-    i {
-      
-      font-size: 18px;
-    }
-  }
-
-  .input_box {
-    display: flex;
-    flex: 10;
-    max-width: 600px;
-
-    input {
-      flex: 1;
-      padding: 14px 10px;
-      border: none;
-      background-color: #F2F2F2;
+    .fl {
       width: 100%;
-      border-radius: 10px;
-      outline: none ;
+      background: $white;
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .media {
+        display: none;
+      }
+      .med-btn {
+        display: none;
+      }
+
+      .logo {
+        height: 28px;
+      }
+
+      .logo_btn {
+        border: solid black;
+        gap: 12px;
+        display: flex;
+        background-color: $white;
+        padding: 15px 50px;
+        border-radius: 16px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.25s ease;
+
+        &:hover {
+          border: solid $primary-color;
+          color: $primary-color;
+        }
+
+        i {
+          font-size: 18px;
+        }
+      }
     }
 
-    button {
-      background: $primary-color;
-      border: none;
-      padding: 14px 18px;
-      color: $white;
-      margin-left: -15px;
-      cursor: pointer;
+    .input_box {
+      display: flex;
+      flex: 10;
+      max-width: 600px;
+
+      input {
+        flex: 1;
+        padding: 14px 10px;
+        border: none;
+        background-color: #f2f2f2;
+        width: 100%;
+        border-radius: 10px;
+        outline: none;
+      }
+
+      button {
+        background: $primary-color;
+        border: none;
+        padding: 14px 18px;
+        color: $white;
+        margin-left: -15px;
+        cursor: pointer;
         border-radius: 0 10px 10px 0;
 
-      &:hover {
-        border: 2px solid $primary-color;
+        &:hover {
+          border: 2px solid $primary-color;
+        }
       }
     }
-  }
 
-  .icon {
-    color: black;
-    display: flex;
-    gap: 29px;
-
-    .icon-box {
-      text-align: center;
-      cursor: pointer;
-      transition: all 0.25s ease;
-      i {
-        
-        font-size: 20px;
-      }
-
-      &:hover {
-        color: $primary-color;
-      }
-    }
-  }
-}
-
-/* Catalog Wrapper */
-.catalog_wrapper {
-  left: 0;
-  width: 100%;
-  height: calc(100vh - 90px);
-  z-index: 999;
-  opacity: 1;
-  transition: opacity 0.3s;
-
-  &.hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .catalog_box {
-    background: $white;
-    max-width: 100%;
-    padding: 30px;
-    display: flex;
-    gap: 30px;
-    position: relative;
-
-    .catalog_left {
-      width: 260px;
-      border-right: 1px solid #eee;
+    .icon {
+      color: black;
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      gap: 29px;
 
-      a {
-        padding: 10px 14px;
-        text-decoration: none;
-        color: $text-color;
-        border-radius: 8px;
+      .icon-box {
+        text-align: center;
+        cursor: pointer;
+        transition: all 0.25s ease;
+        i {
+          font-size: 20px;
+        }
 
-        &:hover,
-        &.active {
-          background: lighten($primary-color, 80%);
+        &:hover {
           color: $primary-color;
         }
       }
+    }
+  }
 
-      .catolog_baby_btn {
-        border: 1px solid $primary-color;
-        color: $primary-color;
-        border-radius: 10px;
-        background-color: $white;
-        display: flex;
-        flex-direction: column;
-        padding: 5px 10px;
-        cursor: pointer;
+  /* Catalog Wrapper */
+  .catalog_wrapper {
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 90px);
+    z-index: 999;
+    opacity: 1;
+    transition: opacity 0.3s;
 
-        .baby_dady {
-          display: flex;
-          justify-content: start;
-          align-items: center;
-          padding: 5px 10px;
-          border-radius: 10px;
-          background-color: $white;
-
-          img {
-            width: 45px;
-          }
-
-          h4 {
-            font-size: 19px;
-            margin-left: 15px;
-          }
-
-          i {
-            font-size: 26px;
-            margin-left: 19px;
-          }
-        }
-
-        .baby_baby {
-          display: flex;
-          align-items: center;
-          padding: 5px 10px;
-          border-radius: 10px;
-          background-color: $white;
-          color: black;
-          &.hidden {
-            display: none;
-          }
-
-          img {
-            width: 45px;
-            margin-right: 5px;
-            &.b2b {
-              height: 40px;
-              width: 40px;
-            }
-          }
-
-          h4 {
-          
-            font-size: 15px;
-          }
-        }
-      }
+    &.hidden {
+      opacity: 0;
+      pointer-events: none;
     }
 
-    .catalog_right {
-      flex: 1;
+    .catalog_box {
+      background: $white;
+      max-width: 100%;
+      padding: 30px;
+      display: flex;
+      gap: 30px;
+      position: relative;
 
-      h3 {
-        margin-bottom: 15px;
-      }
-
-      .brands {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 12px;
+      .catalog_left {
+        width: 260px;
+        border-right: 1px solid #eee;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
 
         a {
+          padding: 10px 14px;
           text-decoration: none;
-          color: #555;
+          color: $text-color;
+          border-radius: 8px;
 
-          &:hover {
+          &:hover,
+          &.active {
+            background: lighten($primary-color, 80%);
             color: $primary-color;
           }
         }
+
+        .catolog_baby_btn {
+          border: 1px solid $primary-color;
+          color: $primary-color;
+          border-radius: 10px;
+          background-color: $white;
+          display: flex;
+          flex-direction: column;
+          padding: 5px 10px;
+          cursor: pointer;
+
+          .baby_dady {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: $white;
+
+            img {
+              width: 45px;
+            }
+
+            h4 {
+              font-size: 19px;
+              margin-left: 15px;
+            }
+
+            i {
+              font-size: 26px;
+              margin-left: 19px;
+            }
+          }
+
+          .baby_baby {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background-color: $white;
+            color: black;
+            &.hidden {
+              display: none;
+            }
+
+            img {
+              width: 45px;
+              margin-right: 5px;
+              &.b2b {
+                height: 40px;
+                width: 40px;
+              }
+            }
+
+            h4 {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      .catalog_right {
+        flex: 1;
+
+        h3 {
+          margin-bottom: 15px;
+        }
+
+        .brands {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 12px;
+
+          a {
+            text-decoration: none;
+            color: #555;
+
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+
+      .close_btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
+        cursor: pointer;
       }
     }
-
-    .close_btn {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      font-size: 20px;
-      cursor: pointer;
-    }
   }
-}
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .input_box,
-  .icon {
-    display: none;
+  .navbar {
+    .naw {
+      padding: 5px 7px;
+      display: block;
+      justify-content: space-between;
+      .media-blok {
+        display: block;
+        margin-top: 20px;
+        align-items: center;
+        .flex {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 20px;
+          align-items: center;
+          width: 100%;
+          i {
+            font-size: 30px;
+          }
+          img {
+            width: 100px;
+          }
+        }
+        .media-flex {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 30px;
+          .media-icon {
+            border: 2px solid #121010;
+            border-radius: 8px;
+            padding: 4px 6px;
+            i {
+              font-size: 30px;
+              cursor: pointer;
+            }
+          }
+          .media-input {
+            display: flex;
+            align-items: center;
+            background-color: #e1dede;
+            padding: 7px 10px;
+            border-radius: 10px;
+            width: 80%;
+            input {
+              border: none;
+              outline: none;
+              background: transparent;
+              padding: 8px;
+              width: 150px;
+            }
+            i {
+              font-size: 20px;
+              color: #888;
+            }
+          }
+        }
+      }
+      .fl {
+        .logo_btn {
+          display: none;
+        }
+        .lex {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+          .media {
+            display: flex;
+            .log {
+              display: block;
+              height: 35px;
+              border-radius: 6px;
+              margin-right: 10px;
+            }
+          }
+          .med-btn {
+            display: block;
+            background-color: $primary-color;
+            color: $white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+
+            &:hover {
+              background-color: darken($primary-color, 10%);
+            }
+          }
+        }
+        .logo {
+          display: none;
+        }
+
+        .input_box {
+          display: none;
+        }
+        .icon {
+          .icon-box {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
-
