@@ -490,6 +490,14 @@ body {
   width: 390px;
 }
 
+.reklama {
+  overflow: hidden;
+}
+.reklama img:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
+}
+
 .cursor-slide {
   display: flex;
   gap: 1rem;

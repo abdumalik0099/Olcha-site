@@ -190,3 +190,11 @@
     }
   }
 }
+
+.reklama{
+  overflow: hidden;
+  img:hover{
+    transition: 0.7s;
+  transform: scale(1.1);
+  }
+}
