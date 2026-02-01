@@ -142,7 +142,7 @@
 }
 
 /* NAV */
-.naw {
+.navbar .naw {
   background: #fff;
   padding: 20px 5px;
   display: flex;
@@ -150,10 +150,10 @@
   align-items: center;
   gap: 30px;
 }
-.naw .logo {
+.navbar .naw .logo {
   height: 28px;
 }
-.naw .logo_btn {
+.navbar .naw .logo_btn {
   border: solid black;
   gap: 12px;
   display: flex;
@@ -164,19 +164,19 @@
   cursor: pointer;
   transition: all 0.25s ease;
 }
-.naw .logo_btn:hover {
+.navbar .naw .logo_btn:hover {
   border: solid #da002b;
   color: #da002b;
 }
-.naw .logo_btn i {
+.navbar .naw .logo_btn i {
   font-size: 18px;
 }
-.naw .input_box {
+.navbar .naw .input_box {
   display: flex;
   flex: 10;
   max-width: 600px;
 }
-.naw .input_box input {
+.navbar .naw .input_box input {
   flex: 1;
   padding: 14px 10px;
   border: none;
@@ -185,7 +185,7 @@
   border-radius: 10px;
   outline: none;
 }
-.naw .input_box button {
+.navbar .naw .input_box button {
   background: #da002b;
   border: none;
   padding: 14px 18px;
@@ -194,28 +194,29 @@
   cursor: pointer;
   border-radius: 0 10px 10px 0;
 }
-.naw .input_box button:hover {
+.navbar .naw .input_box button:hover {
   border: 2px solid #da002b;
 }
-.naw .icon {
+.navbar .naw .icon {
   color: black;
   display: flex;
   gap: 29px;
 }
-.naw .icon .icon-box {
+.navbar .naw .icon .icon-box {
   text-align: center;
   cursor: pointer;
   transition: all 0.25s ease;
 }
-.naw .icon .icon-box i {
+.navbar .naw .icon .icon-box i {
   font-size: 20px;
 }
-.naw .icon .icon-box:hover {
+.navbar .naw .icon .icon-box:hover {
   color: #da002b;
 }
-
-/* Catalog Wrapper */
-.catalog_wrapper {
+.navbar {
+  /* Catalog Wrapper */
+}
+.navbar .catalog_wrapper {
   left: 0;
   width: 100%;
   height: calc(100vh - 90px);
@@ -223,11 +224,11 @@
   opacity: 1;
   transition: opacity 0.3s;
 }
-.catalog_wrapper.hidden {
+.navbar .catalog_wrapper.hidden {
   opacity: 0;
   pointer-events: none;
 }
-.catalog_wrapper .catalog_box {
+.navbar .catalog_wrapper .catalog_box {
   background: #fff;
   max-width: 100%;
   padding: 30px;
@@ -235,24 +236,24 @@
   gap: 30px;
   position: relative;
 }
-.catalog_wrapper .catalog_box .catalog_left {
+.navbar .catalog_wrapper .catalog_box .catalog_left {
   width: 260px;
   border-right: 1px solid #eee;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.catalog_wrapper .catalog_box .catalog_left a {
+.navbar .catalog_wrapper .catalog_box .catalog_left a {
   padding: 10px 14px;
   text-decoration: none;
   color: #333;
   border-radius: 8px;
 }
-.catalog_wrapper .catalog_box .catalog_left a:hover, .catalog_wrapper .catalog_box .catalog_left a.active {
+.navbar .catalog_wrapper .catalog_box .catalog_left a:hover, .navbar .catalog_wrapper .catalog_box .catalog_left a.active {
   background: white;
   color: #da002b;
 }
-.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn {
+.navbar .catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn {
   border: 1px solid #da002b;
   color: #da002b;
   border-radius: 10px;
@@ -262,7 +263,7 @@
   padding: 5px 10px;
   cursor: pointer;
 }
-.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady {
+.navbar .catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -270,18 +271,18 @@
   border-radius: 10px;
   background-color: #fff;
 }
-.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady img {
+.navbar .catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady img {
   width: 45px;
 }
-.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady h4 {
+.navbar .catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady h4 {
   font-size: 19px;
   margin-left: 15px;
 }
-.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady i {
+.navbar .catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_dady i {
   font-size: 26px;
   margin-left: 19px;
 }
-.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby {
+.navbar .catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby {
   display: flex;
   align-items: center;
   padding: 5px 10px;
@@ -289,39 +290,39 @@
   background-color: #fff;
   color: black;
 }
-.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby.hidden {
+.navbar .catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby.hidden {
   display: none;
 }
-.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby img {
+.navbar .catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby img {
   width: 45px;
   margin-right: 5px;
 }
-.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby img.b2b {
+.navbar .catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby img.b2b {
   height: 40px;
   width: 40px;
 }
-.catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby h4 {
+.navbar .catalog_wrapper .catalog_box .catalog_left .catolog_baby_btn .baby_baby h4 {
   font-size: 15px;
 }
-.catalog_wrapper .catalog_box .catalog_right {
+.navbar .catalog_wrapper .catalog_box .catalog_right {
   flex: 1;
 }
-.catalog_wrapper .catalog_box .catalog_right h3 {
+.navbar .catalog_wrapper .catalog_box .catalog_right h3 {
   margin-bottom: 15px;
 }
-.catalog_wrapper .catalog_box .catalog_right .brands {
+.navbar .catalog_wrapper .catalog_box .catalog_right .brands {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
 }
-.catalog_wrapper .catalog_box .catalog_right .brands a {
+.navbar .catalog_wrapper .catalog_box .catalog_right .brands a {
   text-decoration: none;
   color: #555;
 }
-.catalog_wrapper .catalog_box .catalog_right .brands a:hover {
+.navbar .catalog_wrapper .catalog_box .catalog_right .brands a:hover {
   color: #da002b;
 }
-.catalog_wrapper .catalog_box .close_btn {
+.navbar .catalog_wrapper .catalog_box .close_btn {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -491,11 +492,15 @@ body {
 }
 
 .reklama {
+  margin-top: 30px;
   overflow: hidden;
+  cursor: pointer;
+}
+.reklama img {
+  transition: 0.3s ease;
 }
 .reklama img:hover {
-  transition: 0.7s;
-  transform: scale(1.1);
+  transform: scale(1.04);
 }
 
 .cursor-slide {

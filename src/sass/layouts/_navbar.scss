@@ -12,7 +12,8 @@ $shadow-light: rgba(0, 0, 0, 0.1);
 }
 
 /* NAV */
-.naw {
+.navbar{
+  .naw {
   background: $white;
   padding: 20px 5px;
   display: flex;
@@ -231,6 +232,7 @@ $shadow-light: rgba(0, 0, 0, 0.1);
       cursor: pointer;
     }
   }
+}
 }
 
 /* Media Queries */
