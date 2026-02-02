@@ -647,95 +647,6 @@ body {
     height: 40px;
   }
 }
-.products {
-  background-color: #d70018;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-}
-@media (max-width: 1200px) {
-  .products {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-@media (max-width: 768px) {
-  .products {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media (max-width: 480px) {
-  .products {
-    grid-template-columns: 1fr;
-  }
-}
-
-#card_product_aksiya_1 {
-  gap: 20px;
-  align-items: flex-start;
-  width: 400px;
-  display: flex;
-}
-
-#card_product_aksiya_5 {
-  width: 400px;
-  display: flex;
-}
-
-.card {
-  margin: 10px 0 10px 10px;
-  width: 290px;
-  background: #fff;
-  border-radius: 20px;
-  padding: 20px;
-  position: relative;
-  transition: 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px);
-}
-.card:hover img {
-  transform: scale(1.05);
-}
-.card img {
-  width: 90%;
-  height: 200px;
-  object-fit: contain;
-  transition: 0.3s ease;
-}
-.card .discount {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  background: #d70018;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 8px;
-  font-size: 14px;
-}
-.card h3 {
-  font-size: 16px;
-  margin: 15px 0;
-}
-.card .old {
-  color: #999;
-  text-decoration: line-through;
-  font-size: 14px;
-}
-.card .price {
-  color: #d70018;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 5px 0;
-}
-.card .credit {
-  display: inline-block;
-  background: #ffd84d;
-  padding: 8px 12px;
-  border-radius: 10px;
-  font-size: 14px;
-  margin-top: 8px;
-}
-
 .cursor-slide {
   display: flex;
   gap: 1rem;
@@ -765,6 +676,62 @@ body {
   font-size: 14px;
   margin-top: 8px;
   font-weight: 500;
+}
+
+.grid {
+  width: 100%;
+  height: 558px;
+  margin-top: 30px;
+  background-color: #d70018;
+  border-radius: 20px;
+}
+.grid .grid-left {
+  padding: 16px;
+}
+.grid .grid-left .grid-top {
+  display: flex;
+  width: 32%;
+  height: 255px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+}
+.grid .grid-left .grid-top .left img {
+  width: 200px;
+  z-index: 50;
+  position: relative;
+}
+.grid .grid-left .grid-top .chegirma {
+  position: absolute;
+  padding: 5px;
+  background-color: #d70018;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  z-index: 100;
+}
+.grid .grid-left .grid-bottom {
+  display: flex;
+  margin-top: 16px;
+  width: 32%;
+  height: 255px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+}
+.grid .grid-left .grid-bottom .left img {
+  width: 200px;
+  z-index: 50;
+  position: relative;
+}
+.grid .grid-left .grid-bottom .chegirma {
+  position: absolute;
+  padding: 5px;
+  background-color: #d70018;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  z-index: 100;
 }
 
 /*# sourceMappingURL=style.css.map */
