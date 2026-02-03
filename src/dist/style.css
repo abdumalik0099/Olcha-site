@@ -679,6 +679,7 @@ body {
 }
 
 .grid {
+  display: flex;
   width: 100%;
   height: 558px;
   margin-top: 30px;
@@ -690,11 +691,50 @@ body {
 }
 .grid .grid-left .grid-top {
   display: flex;
-  width: 32%;
+  width: 440px;
   height: 255px;
   background: #ffffff;
   border-radius: 20px;
   padding: 20px;
+  z-index: 50;
+}
+.grid .grid-left .grid-top .right h4 {
+  text-decoration: line-through;
+  color: #888888;
+  font-weight: 100;
+}
+.grid .grid-left .grid-top .right h3 {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #d70018;
+}
+.grid .grid-left .grid-top .right button {
+  background-color: #ffd740;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+.grid .grid-left .grid-top .ikons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.grid .grid-left .grid-top .ikons .ri-heart-line {
+  z-index: 100;
+  font-size: 26px;
+  color: #666666;
+  margin-right: 0px;
+  cursor: pointer;
+}
+.grid .grid-left .grid-top .ikons .ri-bar-chart-fill {
+  font-size: 26px;
+  margin-top: 20px;
+  color: #666666;
+  cursor: pointer;
 }
 .grid .grid-left .grid-top .left img {
   width: 200px;
@@ -713,11 +753,49 @@ body {
 .grid .grid-left .grid-bottom {
   display: flex;
   margin-top: 16px;
-  width: 32%;
+  width: 440px;
   height: 255px;
   background: #ffffff;
   border-radius: 20px;
   padding: 20px;
+}
+.grid .grid-left .grid-bottom .right h4 {
+  text-decoration: line-through;
+  color: #888888;
+  font-weight: 100;
+}
+.grid .grid-left .grid-bottom .right h3 {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #d70018;
+}
+.grid .grid-left .grid-bottom .right button {
+  background-color: #ffd740;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+.grid .grid-left .grid-bottom .ikons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.grid .grid-left .grid-bottom .ikons .ri-heart-line {
+  z-index: 100;
+  font-size: 26px;
+  color: #666666;
+  margin-right: 0px;
+  cursor: pointer;
+}
+.grid .grid-left .grid-bottom .ikons .ri-bar-chart-fill {
+  font-size: 26px;
+  margin-top: 20px;
+  color: #666666;
+  cursor: pointer;
 }
 .grid .grid-left .grid-bottom .left img {
   width: 200px;
@@ -725,6 +803,71 @@ body {
   position: relative;
 }
 .grid .grid-left .grid-bottom .chegirma {
+  position: absolute;
+  padding: 5px;
+  background-color: #d70018;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  z-index: 100;
+}
+.grid .grid-right {
+  border-radius: 20px;
+  padding: 20px 10px 0px;
+}
+.grid .grid-right .right1 .grid-top {
+  display: block;
+  width: 250px;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  z-index: 50;
+}
+.grid .grid-right .right1 .grid-top .right h4 {
+  text-decoration: line-through;
+  color: #888888;
+  font-weight: 100;
+}
+.grid .grid-right .right1 .grid-top .right h3 {
+  margin-top: 8px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #d70018;
+}
+.grid .grid-right .right1 .grid-top .right button {
+  background-color: #ffd740;
+  font-weight: 600;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+.grid .grid-right .right1 .grid-top .ikons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.grid .grid-right .right1 .grid-top .ikons .ri-heart-line {
+  z-index: 100;
+  font-size: 26px;
+  color: #666666;
+  margin-right: 0px;
+  cursor: pointer;
+}
+.grid .grid-right .right1 .grid-top .ikons .ri-bar-chart-fill {
+  font-size: 26px;
+  margin-top: 20px;
+  color: #666666;
+  cursor: pointer;
+}
+.grid .grid-right .right1 .grid-top .left img {
+  width: 200px;
+  z-index: 50;
+  position: relative;
+}
+.grid .grid-right .right1 .grid-top .chegirma {
   position: absolute;
   padding: 5px;
   background-color: #d70018;
