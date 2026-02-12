@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+button {
+  cursor: pointer;
+}
+
 .top_red {
   display: flex;
   background-color: #da002b;
@@ -227,12 +231,36 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .navbar .naw .icon .icon-box i {
   font-size: 20px;
+  position: relative;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+.navbar .naw .icon .icon-box i #yurak,
+.navbar .naw .icon .icon-box i #savati {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  display: none;
+  background-color: #d70018;
+  color: white;
+  font-size: 10px;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  margin: 0;
+  font-family: sans-serif;
 }
 .navbar .naw .icon .icon-box:hover {
-  color: #da002b;
+  color: #d70018;
 }
 .navbar {
   /* Catalog Wrapper */
@@ -816,6 +844,7 @@ body {
   padding: 20px 10px 0px;
 }
 .grid .grid-right .right1 .grid-top {
+  position: relative;
   display: block;
   width: 250px;
   height: 100%;
@@ -845,29 +874,31 @@ body {
   padding: 8px 12px;
 }
 .grid .grid-right .right1 .grid-top .ikons {
+  position: absolute;
+  top: 15px;
+  right: 15px;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   align-items: flex-end;
+  z-index: 101;
 }
-.grid .grid-right .right1 .grid-top .ikons .ri-heart-line {
-  z-index: 100;
-  font-size: 26px;
-  color: #666666;
-  margin-right: 0px;
-  cursor: pointer;
-}
+.grid .grid-right .right1 .grid-top .ikons .ri-heart-line,
 .grid .grid-right .right1 .grid-top .ikons .ri-bar-chart-fill {
   font-size: 26px;
-  margin-top: 20px;
   color: #666666;
   cursor: pointer;
 }
 .grid .grid-right .right1 .grid-top .left img {
-  width: 200px;
+  padding-left: 15px;
+  height: 200px;
   z-index: 50;
   position: relative;
+  margin-top: 60px;
 }
 .grid .grid-right .right1 .grid-top .chegirma {
+  top: 15px;
+  left: 15px;
   position: absolute;
   padding: 5px;
   background-color: #d70018;
@@ -875,6 +906,26 @@ body {
   border: none;
   border-radius: 5px;
   z-index: 100;
+}
+.grid .grid-right .right1 .grid-top .click_btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+}
+.grid .grid-right .right1 .grid-top .click_btn #savat {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #000;
+  font-size: 20px;
+  border-radius: 10px;
+}
+.grid .grid-right .right1 .grid-top .click_btn #rassrochka {
+  cursor: pointer;
+  padding: 10px;
+  border: 2px solid #ff0000;
+  font-size: 20px;
+  border-radius: 10px;
+  color: #d70018;
 }
 
 /*# sourceMappingURL=style.css.map */

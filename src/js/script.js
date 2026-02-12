@@ -1,5 +1,4 @@
 
-
 const langLinks = document.querySelectorAll('.lang');
 
 langLinks.forEach(link => {

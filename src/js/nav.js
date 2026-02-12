@@ -36,12 +36,7 @@ var swiper = new Swiper(".mySwiper", {
         const m = Math.floor((totalSeconds % 3600) / 60);
         const s = totalSeconds % 60;
 
-        // "01", "09" ko'rinishida chiqarish
-        hourEl.textContent = h < 10 ? "0" + h : h;
-        minuteEl.textContent = m < 10 ? "0" + m : m;
-        secondEl.textContent = s < 10 ? "0" + s : s;
-
-        totalSeconds--;
+        
     }
 
     // Har sekundda yangilash

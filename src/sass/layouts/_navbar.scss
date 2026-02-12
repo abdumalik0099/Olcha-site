@@ -99,12 +99,40 @@ $shadow-light: rgba(0, 0, 0, 0.1);
         text-align: center;
         cursor: pointer;
         transition: all 0.25s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center; // Hammasini markazga tekislaydi
+
+        // Ikonka o'zi uchun joy ochamiz
         i {
           font-size: 20px;
+          position: relative; // BU JUDA MUHIM: Son endi ikonka burchagiga yopishadi
+          display: inline-block;
+          transition: color 0.3s ease;
+          
+          // Sonlar uchun umumiy stil (#yurak va #savati)
+          #yurak,
+          #savati {
+            position: absolute;
+            top: -8px; // Ikonkadan tepaga chiqishi uchun
+            right: -10px; // Ikonkadan o'ngga chiqishi uchun
+            display: none;
+            background-color: #d70018; // Qizil rang
+            color: white;
+            font-size: 10px;
+            min-width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid white; // Atrofidagi oq chiziq
+            margin: 0; // Ortiqcha joylarni yo'qotish
+            font-family: sans-serif;
+          }
         }
 
         &:hover {
-          color: $primary-color;
+          color: #d70018; // O'zingizning $primary-color o'rniga
         }
       }
     }
