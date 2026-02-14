@@ -11,6 +11,16 @@ $shadow-light: rgba(0, 0, 0, 0.1);
 
 /* NAV */
 .navbar {
+  position: sticky; 
+  top: 5px;      // Tepadan 0 masofada
+  z-index: 1000;              // Boshqa elementlar ustida bo‘lishi uchun
+  background: $white;         // Orqa fon oq (pastdagi kontentni yopadi)
+  transition: box-shadow 0.3s ease;  // Silliq o‘tish
+
+  /* Scroll bo‘lganda soya chiqadi (chiroyli ko‘rinish uchun) */
+  body.scrolled & {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
   .naw {
     background: $white;
     margin-top: 10px;
@@ -21,9 +31,10 @@ $shadow-light: rgba(0, 0, 0, 0.1);
       display: none;
     }
     .fl {
+      padding: 10px;
+      align-items: center;
       width: 100%;
       background: $white;
-      margin-top: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -109,7 +120,7 @@ $shadow-light: rgba(0, 0, 0, 0.1);
           position: relative; // BU JUDA MUHIM: Son endi ikonka burchagiga yopishadi
           display: inline-block;
           transition: color 0.3s ease;
-          
+
           // Sonlar uchun umumiy stil (#yurak va #savati)
           #yurak,
           #savati {
@@ -380,5 +391,58 @@ $shadow-light: rgba(0, 0, 0, 0.1);
         }
       }
     }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==================== YANGI YECHIM: FIXED NAVBAR + TOP_RED YASHIRISH ==================== */
+
+/* Normal holat */
+.top_red {
+  transition: transform 0.4s ease, opacity 0.4s ease;  // Silliq yashirish
+}
+
+.navbar {
+  transition: all 0.3s ease;  // Silliq o‘tish
+  background: $white;
+  z-index: 1000;  // Ustda turadi
+  width: 100%;    // To‘liq kenglik
+}
+
+/* Scroll bo‘lganda (JS orqali scrolled class qo‘shiladi) */
+body.scrolled {
+  .top_red {
+    transform: translateY(-100%);  // Top_red ni silliq tepaga chiqarib yashiradi
+    opacity: 0;                    // Shaffof qiladi
+    pointer-events: none;          // Bosilmasin
+  }
+
+  .navbar {
+    position: fixed;               // Tepada qolib turadi
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);  // Soya (allaqachon chiqayotgan edi)
+  }
+
+  /* Sahifa sakramasligi uchun main ga padding qo‘sh (top_red balandligini o‘lcha, taxminan 50-60px) */
+  main {
+    padding-top: 60px;  // Bu ni o‘zingiz o‘lchab qo‘ying (top_red balandligi)
+  }
+}
+
+/* Mobil uchun o‘zgarmaydi (.top_red allaqachon display: none) */
+@media (max-width: 768px) {
+  body.scrolled main {
+    padding-top: 0;  // Mobil da top_red yo‘q, padding kerak emas
   }
 }

@@ -152,3 +152,12 @@ function easeOut(t) {
 
 
 
+// Scroll ni kuzatish
+window.addEventListener("scroll", function () {
+  const scrollY = window.pageYOffset;
+  if (scrollY > 50) {  // 50px dan keyin ishlaydi (xohlasangiz 0 qiling)
+    document.body.classList.add("scrolled");
+  } else {
+    document.body.classList.remove("scrolled");
+  }
+});
