@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const heartIcons = document.querySelectorAll("#plus, #plus1, #plus2");
   const heartCount = document.getElementById("yurak");
 
-  // Boshlang‘ich qiymat
   heartCount.textContent = "0";
 
   heartIcons.forEach((icon) => {
@@ -12,7 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
       let count = parseInt(heartCount.textContent);
 
       if (icon.dataset.liked === "false") {
-        // Like
         icon.classList.remove("ri-heart-line");
         icon.classList.add("ri-heart-fill");
         icon.style.color = "#d70018";
@@ -22,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
         heartCount.textContent = count + 1;
         heartCount.style.display = "flex";
       } else {
-        // Unlike
         icon.classList.remove("ri-heart-fill");
         icon.classList.add("ri-heart-line");
         icon.style.color = "#666666";
